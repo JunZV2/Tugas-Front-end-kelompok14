@@ -1,18 +1,44 @@
-.box-button {
-  background-color: #4CAF50; /* Example: Green background */
-  color: white; /* White text color */
-  padding: 15px 30px; /* Spacing inside the button */
-  border: none; /* No default border */
-  border-radius: 8px; /* Slightly rounded corners */
-  cursor: pointer; /* Indicates it's clickable */
-  font-size: 16px; /* Text size */
-  font-weight: bold; /* Bold text */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* No underline for text */
-  display: inline-block; /* Allows for setting width/height and other block-level properties */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 40px;
+  color: #333;
 }
 
-.box-button:hover {
-  background-color: #45a049; /* Darker green on hover */
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 1.1em;
+  vertical-align: middle;
+}
+
+
+select {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+select:hover, select:focus {
+  background-color: #45a049; 
+  outline: none;
 }

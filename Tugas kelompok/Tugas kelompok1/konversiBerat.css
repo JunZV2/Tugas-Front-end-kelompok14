@@ -1,0 +1,18 @@
+.box-button {
+  background-color: #4CAF50; /* Example: Green background */
+  color: white; /* White text color */
+  padding: 15px 30px; /* Spacing inside the button */
+  border: none; /* No default border */
+  border-radius: 8px; /* Slightly rounded corners */
+  cursor: pointer; /* Indicates it's clickable */
+  font-size: 16px; /* Text size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* No underline for text */
+  display: inline-block; /* Allows for setting width/height and other block-level properties */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.box-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

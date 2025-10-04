@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="rumah_adat.css">
+  <title>Rumah Adat Nusantara | Jelajahi Kekayaan Arsitektur Indonesia</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Rumah Adat Nusantara</h1>
+    </nav>
+  </header>
+
+  <main>
+    
+<section id="hero">
+  
+  <video autoplay muted loop id="hero-video">
+    <source src="video/rumah_adat.mp4" type="video/mp4">
+    Browser Anda tidak mendukung tag video.
+  </video>
+
+  
+  <div class="hero-content">
+    <h2>Warisan Arsitektur Indonesia</h2>
+    <p>Kenali lebih dekat keunikan dan sejarah di balik setiap rumah adat dari berbagai penjuru Nusantara.</p>
+  </div>
+</section>
+
+
+    
+    <section id="gallery">
+      <h2>Galeri Rumah Adat</h2>
+      <div class="gallery-container">
+
+        
+        <div class="card" 
+             data-description="Rumah Gadang adalah rumah adat Minangkabau dengan atap gonjong menyerupai tanduk kerbau." 
+             data-history="Filosofi utamanya berakar pada adat matrilineal dan alam. Populer sejak masa Kerajaan Pagaruyung (abad ke-16)." 
+             data-image="img/rumah_gadang.jpg" 
+             data-title="Rumah Gadang">
+          <img alt="Rumah Gadang" src="img/rumah_gadang.jpg"/>
+          <div class="card-title">
+            <h3>Rumah Gadang</h3>
+            <p>Sumatera Barat</p>
+          </div>
+        </div>
+
+        
+        <div class="card" 
+             data-description="Rumah Joglo adalah rumah adat Jawa dengan tiang utama Soko Guru dan atap limasan yang khas." 
+             data-history="Berkembang sejak era Kesultanan Mataram abad ke-17, simbol harmoni manusia, alam, dan Sang Pencipta." 
+             data-image="img/rumah_joglo.jpg" 
+             data-title="Rumah Joglo">
+          <img alt="Rumah Joglo" src="img/rumah_joglo.jpg"/>
+          <div class="card-title">
+            <h3>Rumah Joglo</h3>
+            <p>Jawa Tengah & DIY</p>
+          </div>
+        </div>
+
+        
+        <div class="card" 
+             data-description="Honai adalah rumah adat suku Dani di Papua, berbentuk bulat dengan atap jerami." 
+             data-history="Honai diwariskan turun-temurun dan menjadi pusat kegiatan adat di Lembah Baliem." 
+             data-image="img/rumah_honai.jpg" 
+             data-title="Rumah Honai">
+          <img alt="Rumah Honai" src="img/rumah_honai.jpg"/>
+          <div class="card-title">
+            <h3>Rumah Honai</h3>
+            <p>Papua Pegunungan</p>
+          </div>
+        </div>
+
+        
+        <div class="card" 
+             data-description="Rumah Tongkonan adalah rumah adat Toraja dengan atap melengkung menyerupai perahu terbalik." 
+             data-history="Tongkonan berfungsi sebagai pusat sosial dan spiritual masyarakat Toraja." 
+             data-image="img/rumah_tongkonan.jpg" 
+             data-title="Rumah Tongkonan">
+          <img alt="Rumah Tongkonan" src="img/rumah_tongkonan.jpg"/>
+          <div class="card-title">
+            <h3>Rumah Tongkonan</h3>
+            <p>Sulawesi Selatan</p>
+          </div>
+        </div>
+
+        
+        <div class="card" 
+             data-description="Rumah Baileo adalah rumah adat Maluku yang berfungsi sebagai balai musyawarah adat." 
+             data-history="Baileo melambangkan keterbukaan dan kebersamaan masyarakat Maluku." 
+             data-image="img/rumah_baileo.jpg" 
+             data-title="Rumah Baileo">
+          <img alt="Rumah Baileo" src="img/rumah_baileo.jpg"/>
+          <div class="card-title">
+            <h3>Rumah Baileo</h3>
+            <p>Maluku</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-button">×</span>
+      <img alt="Gambar Rumah Adat" id="modal-img" src=""/>
+      <h2 id="modal-title"></h2>
+      <h3>Deskripsi Singkat</h3>
+      <p id="modal-description"></p>
+      <h3>Sejarah & Filosofi</h3>
+      <p id="modal-history"></p>
+    </div>
+  </div>
+
+  <script src="rumah_adat.js"></script>
+</body>
+</html>

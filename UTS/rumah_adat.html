@@ -1,79 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rumah Adat Nusantara | Jelajahi Kekayaan Arsitektur Indonesia</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="rumah_adat.css">
+  <title>Rumah Adat Nusantara | Jelajahi Kekayaan Arsitektur Indonesia</title>
 </head>
 <body>
+  <header>
+    <nav>
+      <h1>Rumah Adat Nusantara</h1>
+    </nav>
+  </header>
 
-    <header>
-        <nav>
-            <h1>Rumah Adat Nusantara</h1>
-        </nav>
-    </header>
+  <main>
+    
+<section id="hero">
+  
+  <video autoplay muted loop id="hero-video">
+    <source src="img/rumah_adat.mp4" type="video/mp4">
+    Browser Anda tidak mendukung tag video.
+  </video>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h2>Warisan Arsitektur Indonesia</h2>
-                <p>Kenali lebih dekat keunikan dan Sejarah di balik setiap rumah adat dari berbagai penjuru Nusantara.</p>
-            </div>
-        </section>
+  
+  <div class="hero-content">
+    <h2>Warisan Arsitektur Indonesia</h2>
+    <p>Kenali lebih dekat keunikan dan sejarah di balik setiap rumah adat dari berbagai penjuru Nusantara.</p>
+  </div>
+</section>
 
-        <section id="gallery">
-            <h2>Galeri Rumah Adat</h2>
-            <div class="gallery-container">
-            <div class="card" 
-                data-title="Rumah Gadang"
-                data-image="https://share.google/images/7yadmpKyxzm2Pj8u9"
-                data-description="Rumah Gadang (Rumah Besar) adalah arsitektur adat suku Minangkabau. Ciri utamanya adalah atap gonjong yang melengkung tajam seperti tanduk kerbau, melambangkan kemenangan dan kemakmuran. Dindingnya dihiasi ukiran rumit bermotif alam yang disebut 'ragam', dan secara tradisional dibangun tanpa paku besi, melainkan menggunakan pasak kayu."
-                data-history="Filosofi utamanya berakar pada alam ('alam takambang jadi guru') dan adat matrilineal (garis keturunan ibu). Setiap elemen, mulai dari jumlah kamar hingga ukiran, memiliki makna adat yang mendalam. Perkiraan awal arsitektur ini dipercaya telah berkembang selama berabad-abad, dengan puncaknya pada masa Kerajaan Pagaruyung sekitar abad ke-16, meskipun bentuk dasarnya kemungkinan sudah ada jauh lebih lama seiring perkembangan masyarakat Minangkabau.">
-                <img src="https://share.google/images/7yadmpKyxzm2Pj8u9" alt="Rumah Gadang">
-                <div class="card-title">
-                    <h3>Rumah Gadang</h3>
-                    <p>Sumatera Barat</p>
-                </div>
-            </div>
 
-            <div class="card"
-                data-title="Rumah Joglo"
-                data-image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fid.wikipedia.org%2Fwiki%2FJoglo&psig=AOvVaw3_0fW27OLO3XLclxOokwOn&ust=1759234392061000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNDTy4z5_Y8DFQAAAAAdAAAAABAE"
-                data-description="Rumah Joglo adalah rumah adat masyarakat Jawa yang identik dengan status sosial tinggi. Struktur utamanya ditopang oleh empat tiang utama yang disebut 'Soko Guru', melambangkan empat penjuru mata angin. Ruangannya terbagi menjadi beberapa bagian seperti pendopo (area publik), pringgitan (ruang transisi), dan dalem (area pribadi keluarga)."
-                data-history="Arsitektur Joglo mencerminkan filosofi dan kosmologi Jawa yang sinkretis. Bentuk atapnya dipercaya mendapat pengaruh dari arsitektur candi-candi Hindu-Buddha. Model bangunan ini diperkirakan telah berkembang pesat sejak era Kesultanan Mataram pada abad ke-17, namun akarnya bisa ditelusuri kembali ke masa kerajaan-kerajaan kuno di Jawa seperti Majapahit. Joglo adalah simbol harmoni antara manusia, alam, dan Sang Pencipta.">
-                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fid.wikipedia.org%2Fwiki%2FJoglo&psig=AOvVaw3_0fW27OLO3XLclxOokwOn&ust=1759234392061000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNDTy4z5_Y8DFQAAAAAdAAAAABAE" alt="Rumah Joglo">
-                <div class="card-title">
-                    <h3>Rumah Joglo</h3>
-                    <p>Jawa Tengah & DIY</p>
-                </div>
-            </div>
+    
+    <section id="gallery">
+      <h2>Galeri Rumah Adat</h2>
+      <div class="filter-controls">
+        <input type="text" id="search-input" placeholder="Cari nama rumah adat...">
+        <select id="filter-region">
+          <option value="semua">Semua Daerah</option>
+          </select>
+      </div>
+      <div class="gallery-container">
 
-            <div class="card"
-                data-title="Rumah Honai"
-                data-image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.liputan6.com%2Fhot%2Fread%2F5274758%2Frumah-adat-papua-adalah-salah-satu-hasil-budaya-berikut-jenis-jenisnya&psig=AOvVaw11qrfOKau2R0QvkgSYPaAU&ust=1759234547288000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPD6qc75_Y8DFQAAAAAdAAAAABBM"
-                data-description="Honai adalah rumah adat suku Dani di Lembah Baliem, Papua Pegunungan. Bentuknya bundar dengan atap kerucut dari jerami atau ilalang dan dinding kayu. Desain ini sangat efektif untuk menahan udara dingin di pegunungan. Honai sengaja dibuat kecil dan tanpa jendela untuk menjaga kehangatan dari api unggun di tengahnya."
-                data-history="Honai adalah arsitektur purba yang telah ada secara turun-temurun selama berabad-abad, jauh sebelum kontak dengan dunia luar. Fungsinya bukan hanya sebagai tempat tinggal, tetapi juga pusat pendidikan dan kegiatan adat. Dalam satu kompleks (silimo), terdapat Honai (untuk pria), Ebei (untuk wanita dan anak-anak), dan Wamai (kandang babi). Bentuknya yang melingkar melambangkan kesatuan, persatuan, dan kebersamaan yang tak terputus.">
-                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.liputan6.com%2Fhot%2Fread%2F5274758%2Frumah-adat-papua-adalah-salah-satu-hasil-budaya-berikut-jenis-jenisnya&psig=AOvVaw11qrfOKau2R0QvkgSYPaAU&ust=1759234547288000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPD6qc75_Y8DFQAAAAAdAAAAABBM" alt="Rumah Honai">
-                <div class="card-title">
-                    <h3>Rumah Honai</h3>
-                    <p>Papua Pegunungan</p>
-                </div>
-            </div>
-
-            </div>
-        </section>
-    </main>
-
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <img id="modal-img" src="" alt="Gambar Rumah Adat">
-            <h2 id="modal-title"></h2>
-            <h3>Deskripsi Singkat</h3>
-            <p id="modal-description"></p>
-            <h3>Sejarah & Filosofi</h3>
-            <p id="modal-history"></p>
+        
+        <div class="card" 
+            data-description="Rumah Gadang (Rumah Besar) adalah arsitektur adat suku Minangkabau. Ciri utamanya adalah atap gonjong yang melengkung tajam seperti tanduk kerbau, melambangkan kemenangan dan kemakmuran. Dindingnya dihiasi ukiran rumit bermotif alam yang disebut 'ragam', dan secara tradisional dibangun tanpa paku besi, melainkan menggunakan pasak kayu."
+            data-history="Filosofi utamanya berakar pada alam ('alam takambang jadi guru') dan adat matrilineal (garis keturunan ibu). Setiap elemen, mulai dari jumlah kamar hingga ukiran, memiliki makna adat yang mendalam. Perkiraan awal arsitektur ini dipercaya telah berkembang selama berabad-abad, dengan puncaknya pada masa Kerajaan Pagaruyung sekitar abad ke-16, meskipun bentuk dasarnya kemungkinan sudah ada jauh lebih lama seiring perkembangan masyarakat Minangkabau." 
+            data-image="img/rumah_gadang.jpg" 
+            data-title="Rumah Gadang">
+          <img alt="Rumah Gadang" src="img/rumah_gadang.jpg"/>
+          <div class="card-title">
+            <h3>Rumah Gadang</h3>
+            <p>Sumatera Barat</p>
+          </div>
         </div>
+
+        
+        <div class="card" 
+            data-description="Rumah Joglo adalah rumah adat masyarakat Jawa yang identik dengan status sosial tinggi. Struktur utamanya ditopang oleh empat tiang utama yang disebut 'Soko Guru', melambangkan empat penjuru mata angin. Ruangannya terbagi menjadi beberapa bagian seperti pendopo (area publik), pringgitan (ruang transisi), dan dalem (area pribadi keluarga)."
+            data-history="Arsitektur Joglo mencerminkan filosofi dan kosmologi Jawa yang sinkretis. Bentuk atapnya dipercaya mendapat pengaruh dari arsitektur candi-candi Hindu-Buddha. Model bangunan ini diperkirakan telah berkembang pesat sejak era Kesultanan Mataram pada abad ke-17, namun akarnya bisa ditelusuri kembali ke masa kerajaan-kerajaan kuno di Jawa seperti Majapahit. Joglo adalah simbol harmoni antara manusia, alam, dan Sang Pencipta."
+            data-image="img/rumah_joglo.jpg" 
+            data-title="Rumah Joglo">
+          <img alt="Rumah Joglo" src="img/rumah_joglo.jpg"/>
+          <div class="card-title">
+            <h3>Rumah Joglo</h3>
+            <p>Jawa Tengah</p>
+          </div>
+        </div>
+
+        <div class="card" 
+            data-description="Rumah Bolon adalah rumah adat komunal suku Batak Toba. Bangunannya besar, berbentuk panggung, dengan atap pelana yang melengkung tajam di kedua ujungnya. Dinding depan dihiasi dengan ukiran cicak ('gorga') sebagai simbol penolak bala dan kesuburan."
+            data-history="Struktur Rumah Bolon merepresentasikan kosmologi Batak yang terbagi tiga: dunia bawah (kolong rumah untuk ternak), dunia tengah (lantai utama untuk manusia), dan dunia atas (atap sebagai tempat para dewa). Rumah ini menjadi pusat kehidupan sosial dan upacara adat bagi satu marga atau keluarga besar."
+            data-image="img/rumah_bolon.jpg" 
+            data-title="Rumah Bolon">
+          <img alt="Rumah Bolon" src="img/rumah_bolon.jpg"/>
+          <div class="card-title">
+            <h3>Rumah Bolon</h3>
+            <p>Sumatera Utara</p>
+          </div>
+        </div>
+
+        
+        <div class="card" 
+            data-description="Honai adalah rumah adat suku Dani di Lembah Baliem, Papua Pegunungan. Bentuknya bundar dengan atap kerucut dari jerami atau ilalang dan dinding kayu. Desain ini sangat efektif untuk menahan udara dingin di pegunungan. Honai sengaja dibuat kecil dan tanpa jendela untuk menjaga kehangatan dari api unggun di tengahnya."
+            data-history="Honai adalah arsitektur purba yang telah ada secara turun-temurun selama berabad-abad, jauh sebelum kontak dengan dunia luar. Fungsinya bukan hanya sebagai tempat tinggal, tetapi juga pusat pendidikan dan kegiatan adat. Dalam satu kompleks (silimo), terdapat Honai (untuk pria), Ebei (untuk wanita dan anak-anak), dan Wamai (kandang babi). Bentuknya yang melingkar melambangkan kesatuan, persatuan, dan kebersamaan yang tak terputus."
+            data-image="img/rumah_honai.jpg" 
+            data-title="Rumah Honai">
+          <img alt="Rumah Honai" src="img/rumah_honai.jpg"/>
+          <div class="card-title">
+            <h3>Rumah Honai</h3>
+            <p>Papua Pegunungan</p>
+          </div>
+        </div>
+
+        
+        <div class="card" 
+            data-description="Rumah Tongkonan adalah rumah adat Toraja dengan atap melengkung menyerupai perahu terbalik." 
+            data-history="Tongkonan berfungsi sebagai pusat sosial dan spiritual masyarakat Toraja." 
+            data-image="img/rumah_tongkonan.jpg" 
+            data-title="Rumah Tongkonan">
+          <img alt="Rumah Tongkonan" src="img/rumah_tongkonan.jpg"/>
+          <div class="card-title">
+            <h3>Rumah Tongkonan</h3>
+            <p>Sulawesi Selatan</p>
+          </div>
+        </div>
+
+        
+        <div class="card" 
+            data-description="Rumah Baileo adalah rumah adat Maluku yang berfungsi sebagai balai musyawarah adat." 
+            data-history="Baileo melambangkan keterbukaan dan kebersamaan masyarakat Maluku." 
+            data-image="img/rumah_baileo.jpg" 
+            data-title="Rumah Baileo">
+          <img alt="Rumah Baileo" src="img/rumah_baileo.jpg"/>
+          <div class="card-title">
+            <h3>Rumah Baileo</h3>
+            <p>Maluku</p>
+          </div>
+        </div>
+
+        <div class="card" 
+            data-description="Rumah Bubungan Tinggi adalah rumah adat suku Banjar. Ciri khas utamanya adalah atap yang menjulang tinggi dan curam di bagian tengah (sekitar 45 derajat), berfungsi untuk sirkulasi udara di iklim tropis. Bangunannya terbuat dari kayu ulin yang kokoh."
+            data-history="Arsitektur ini mencerminkan hierarki sosial dan pengaruh Hindu serta Islam. Awalnya, rumah ini adalah kediaman para bangsawan dan raja di Kesultanan Banjar. Setiap bagian rumah memiliki fungsi dan filosofi tersendiri, dari area publik di depan hingga area privat di belakang."
+            data-image="img/rumah_bubungan_tinggi.jpg" 
+            data-title="Rumah Bubungan Tinggi">
+          <img alt="Rumah Bubungan Tinggi" src="img/rumah_bubungan_tinggi.jpg"/>
+          <div class="card-title">
+            <h3>Rumah Bubungan Tinggi</h3>
+            <p>Kalimantan Selatan</p>
+          </div>
+        </div>
+
+        <div class="card" 
+            data-description="Arsitektur tradisional Bali bukanlah satu bangunan tunggal, melainkan sebuah kompleks (kuren) yang terdiri dari beberapa paviliun (bale) di dalam tembok. Gerbang ikoniknya disebut Candi Bentar (gerbang terbelah) dan Kori Agung (gerbang beratap)."
+            data-history="Tata letak arsitektur Bali diatur oleh filosofi 'Asta Kosala Kosali', mirip dengan Feng Shui. Konsep ini mengatur zona berdasarkan sumbu spiritual gunung-laut (kaja-kelod) dan terbit-terbenamnya matahari (kangin-kauh), menciptakan harmoni antara manusia, alam, dan para dewa (Tri Hita Karana)."
+            data-image="img/rumah_bali.jpg" 
+            data-title="Arsitektur Khas Bali">
+          <img alt="Arsitektur Khas Bali" src="img/rumah_bali.jpg"/>
+          <div class="card-title">
+            <h3>Arsitektur Khas Bali</h3>
+            <p>Bali</p>
+          </div>
+        </div>
+
+        <div class="card" 
+            data-description="Istana Dalam Loka adalah bekas kediaman raja dari Kesultanan Sumbawa. Ini adalah rumah panggung kayu terbesar di dunia, ditopang oleh 99 tiang yang melambangkan 99 Asmaul Husna (nama-nama baik Allah dalam Islam). Strukturnya luas dan megah tanpa sekat permanen."
+            data-history="Dibangun pada tahun 1885, Dalam Loka berfungsi sebagai pusat pemerintahan, kediaman raja, dan tempat upacara adat. Arsitekturnya adalah perpaduan antara kearifan lokal ('adat berenti ko syara, syara berenti ko kitabullah') dengan nilai-nilai Islam yang kuat, menunjukkan akulturasi budaya yang harmonis."
+            data-image="img/istana_dalam_loka.jpg" 
+            data-title="Istana Dalam Loka">
+          <img alt="Istana Dalam Loka" src="img/istana_dalam_loka.jpg"/>
+          <div class="card-title">
+            <h3>Istana Dalam Loka</h3>
+            <p>Nusa Tenggara Barat</p>
+          </div>
+        </div>
+
+        <div class="card" 
+            data-description="Rumah Adat Karo atau Siwaluh Jabu adalah rumah panggung besar yang bisa dihuni 8 hingga 12 keluarga. Ciri khasnya adalah atap ijuk yang megah berbentuk trapesium dengan hiasan tanduk kerbau di puncaknya. Konstruksinya sangat kompleks dan tidak menggunakan paku sama sekali."
+            data-history="Nama Siwaluh Jabu berarti 'delapan rumah', menandakan sifat komunalnya. Arsitektur ini adalah cerminan sistem sosial masyarakat Karo yang disebut 'merga'. Setiap detail, mulai dari anyaman bambu hingga ukiran, memiliki makna filosofis yang mendalam tentang kehidupan dan kebersamaan."
+            data-image="img/rumah_karo.png" 
+            data-title="Rumah Karo (Siwaluh Jabu)">
+          <img alt="Rumah Karo Siwaluh Jabu" src="img/rumah_karo.png"/>
+          <div class="card-title">
+            <h3>Rumah Karo</h3>
+            <p>Sumatera Utara</p>
+          </div>
+        </div>
+        
+        <div class="card" 
+            data-description="Rumah Limasan adalah salah satu bentuk rumah tradisional Jawa yang paling umum, ditandai dengan atap berbentuk trapesium bersusun. Berbeda dengan Joglo yang lebih rumit dan bersifat ningrat, Limasan lebih fleksibel dan banyak digunakan oleh berbagai kalangan masyarakat."
+            data-history="Bentuk atap Limasan merupakan salah satu gaya arsitektur paling tua di Jawa. Filosofinya menekankan pada kesederhanaan, fungsionalitas, dan kedekatan dengan alam. Strukturnya yang kokoh dan adaptif menjadikannya desain yang bertahan selama berabad-abad sebagai hunian yang nyaman."
+            data-image="img/rumah_limasan.jpg" 
+            data-title="Rumah Limasan">
+          <img alt="Rumah Limasan" src="img/rumah_limasan.jpg"/>
+          <div class="card-title">
+            <h3>Rumah Limasan</h3>
+            <p>Jawa Tengah</p>
+          </div>
+        </div>
+
+        <div class="card" 
+            data-description="Rumah Adat Bugis (Saoraja) adalah rumah panggung kayu khas suku Bugis-Makassar. Atapnya berbentuk pelana dengan 'timpalaja', yaitu bidang segitiga berlapis di ujung atap yang menandakan status sosial pemilik rumah. Semakin banyak lapisannya, semakin tinggi status sosialnya."
+            data-history="Struktur rumah ini mengikuti kosmologi vertikal: dunia bawah ('awa bola') untuk hewan ternak, dunia tengah ('ale bola') untuk hunian manusia, dan dunia atas ('rakkeang') sebagai lumbung dan tempat sakral. Pembagian ini mencerminkan filosofi hidup masyarakat Bugis yang menjunjung tinggi kehormatan dan tatanan sosial."
+            data-image="img/rumah_bugis.jpg" 
+            data-title="Rumah Adat Bugis">
+          <img alt="Rumah Adat Bugis" src="img/rumah_bugis.jpg"/>
+          <div class="card-title">
+            <h3>Rumah Adat Bugis</h3>
+            <p>Sulawesi Selatan</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-button">×</span>
+      <img alt="Gambar Rumah Adat" id="modal-img" src=""/>
+      <h2 id="modal-title"></h2>
+      <h3>Deskripsi Singkat</h3>
+      <p id="modal-description"></p>
+      <h3>Sejarah & Filosofi</h3>
+      <p id="modal-history"></p>
     </div>
+  </div>
+
+  <script src="rumah_adat.js"></script>
 </body>
 </html>
